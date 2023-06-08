@@ -38,14 +38,15 @@ while True:
     system('cls')
 
     # Welcome message and version
-    print("\nWelcome to Genshin KeySwap Finder")
+    print("\nWelcome to Genshin KeySwap Finder by ilCONDORA")
     print("Version: 1.0\n\n")
 
     # Delay before execution
     sleep(3)
 
-    # Example usage
-    root_folder = "C:\\Users\\AndreaCondorelli\\Desktop\\Genshin\\mods"
+    # Specific folder and file name to find
+    # Example of root_folder
+    # root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
     file_name = "merged.ini"
 
     # Search for the file and print the desired line
