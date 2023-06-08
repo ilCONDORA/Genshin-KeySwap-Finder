@@ -46,7 +46,7 @@ while True:
 
     # Welcome message and version
     print("\nWelcome to Genshin KeySwap Finder by ilCONDORA")
-    print("Version: 1.0\n\n")
+    print("Version: 1.0.m\n\n")
 
     # Delay before execution
     sleep(2)
