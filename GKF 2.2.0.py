@@ -68,8 +68,9 @@ def restart_program():
     # Delay before execution
     sleep(3)
 
-    # Example usage
-    root_folder = "C:\\Users\\AndreaCondorelli\\Desktop\\Genshin\\mods"
+    # Specific folder and file name to find
+    # Example of root_folder
+    # root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
     file_name = "merged.ini"
 
     # Search for the file and print the desired line
