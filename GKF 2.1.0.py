@@ -62,7 +62,7 @@ def restart_program():
 
     # Welcome message and version
     print("\nWelcome to Genshin KeySwap Finder Program")
-    print("Version: 2.1\n\n")
+    print("Version: 1.0.a\n\n")
 
     # Delay before execution
     sleep(3)
