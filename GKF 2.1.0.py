@@ -75,7 +75,7 @@ if __name__ == "__main__":
     # Initialize the file change handler and observer
     event_handler = FileChangeHandler()
     observer = Observer()
-    observer.schedule(event_handler, path="C:\\Users\\AndreaCondorelli\\Desktop\\Genshin\\mods", recursive=True)
+    observer.schedule(event_handler, path="C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods", recursive=True)
     observer.start()
 
     try:
