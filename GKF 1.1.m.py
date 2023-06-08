@@ -36,7 +36,7 @@ def search_file(root_folder, file_name):
                             # Format the folder name with a maximum width
                             formatted_folder = folder_name.ljust(max_folder_length)
 
-                            # Print the folder name and value
+                            # Print the folder name, value and spacer
                             output = f"Folder: {formatted_folder} Value: {value}"
                             print(output)
                             spacer = "- "*ceil((len(output)/2)+1)
