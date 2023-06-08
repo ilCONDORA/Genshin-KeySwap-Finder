@@ -1,6 +1,13 @@
 from os import walk, path, system
 from time import sleep
 
+
+# Specific folder and file name to find
+# Example of root_folder
+# root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
+file_name = "merged.ini"
+
+
 def search_file(root_folder, file_name):
     max_folder_length = 25  # Maximum length for the folder name
 
@@ -42,12 +49,7 @@ while True:
     print("Version: 1.0\n\n")
 
     # Delay before execution
-    sleep(3)
-
-    # Specific folder and file name to find
-    # Example of root_folder
-    # root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
-    file_name = "merged.ini"
+    sleep(2)
 
     # Search for the file and print the desired line
     search_file(root_folder, file_name)
@@ -60,4 +62,4 @@ while True:
         break
 
     print("\nRestarting...")
-    sleep(2)
+    sleep(1)
