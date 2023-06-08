@@ -3,6 +3,13 @@ from time import sleep
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+
+# Specific folder and file name to find
+# Example of root_folder
+# root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
+file_name = "merged.ini"
+
+
 class FileChangeHandler(FileSystemEventHandler):
     def __init__(self):
         self.is_running = False  # Flag to indicate if the program is running
@@ -60,11 +67,6 @@ def restart_program():
     # Delay before execution
     sleep(3)
 
-    # Specific folder and file name to find
-    # Example of root_folder
-    # root_folder = "C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods"
-    file_name = "merged.ini"
-
     # Search for the file and print the desired line
     search_file(root_folder, file_name)
 
@@ -75,7 +77,7 @@ if __name__ == "__main__":
     # Initialize the file change handler and observer
     event_handler = FileChangeHandler()
     observer = Observer()
-    observer.schedule(event_handler, path="C:\\Users\\ilCONDORA\\Desktop\\3dmigoto\\Mods", recursive=True)
+    observer.schedule(event_handler, path=f"{root_folder}", recursive=True)
     observer.start()
 
     try:
