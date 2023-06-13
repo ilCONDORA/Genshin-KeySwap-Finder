@@ -48,7 +48,8 @@ def search_file(root_folder, file_name):
                             print(f"{spacer}\n")
 
     if not found_files:
-        print("No files named 'merged.ini' found in the subfolders of the 'Mods' folder.\n")
+        print("\nNo files named 'merged.ini' found in the subfolders of the 'Mods' folder.")
+        input("\nPress ENTER to close the program or just close the window")
 
 
 def search_disabled_files(folder):
@@ -69,7 +70,8 @@ def search_disabled_files(folder):
 
 # Check if the root_folder path is valid
 if not path.exists(root_folder) or not path.isdir(root_folder):
-    print("Invalid root folder path. Please modify the root_folder variable.")
+    print("\nInvalid root folder path. Please modify the root_folder variable.")
+    input("\nPress ENTER to close the program or just close the window")
 else:
     # Get the initial timestamp of the folder
     last_timestamp = stat(root_folder).st_mtime
