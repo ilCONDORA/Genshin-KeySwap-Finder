@@ -46,6 +46,7 @@ def search_file(root_folder, file_name):
 
     if not found_files:
         print("No files named 'merged.ini' found in the subfolders of the 'Mods' folder.\n")
+        input("\nPress ENTER to close the program or just close the window")
         
 
 # Check if the root_folder path is valid
