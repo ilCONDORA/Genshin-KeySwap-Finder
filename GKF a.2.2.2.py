@@ -3,7 +3,7 @@ from time import sleep
 from math import ceil
 
 # Specific folder and file names to find
-root_folder = "C:\\Users\\Ryzen\\Desktop\\mod genshin\\3dmigoto\\Mods"
+root_folder = "C:\\Users\\ilCONDORA\\Desktop\\mod genshin\\3dmigoto\\Mods"
 file_name = "merged.ini"
 disabled_file_prefix = "DISABLED"
 version= "a.2.2.2"
