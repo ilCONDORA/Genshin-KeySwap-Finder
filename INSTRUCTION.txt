@@ -1,0 +1,10 @@
+Hello guys, before running the program, you need to remove the comment on line 6 of the program, 
+where the variable "root_folder" is located, and then assign the path of the "Mods" folder of 3dmigoto. 
+If you are downloading this program, you probably know how to easily perform this step. 
+However, if you don't know, you can contact me. 
+
+
+!!! IMPORTANT !!! 
+Remember to use double backslashes (\\) in the "root_folder" as shown in the example, otherwise it won't work. 
+
+The explanation is over, I hope you have fun, bye!
