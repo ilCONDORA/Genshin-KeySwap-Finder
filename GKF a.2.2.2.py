@@ -8,6 +8,13 @@ file_name = "merged.ini"
 disabled_file_prefix = "DISABLED"
 version= "a.2.2.2"
 
+
+# Welcome message and version
+def welcome_message():
+    print("\nWelcome to Genshin KeySwap Finder by ilCONDORA")
+    print(f"Version: {version}\n\n")
+
+
 def search_file(root_folder, file_name):
     max_folder_length = 40  # Maximum length for the folder name
     found_files = False  # Variable to track if any files are found
@@ -49,7 +56,8 @@ def search_file(root_folder, file_name):
                             print(f"{spacer}\n")
 
     if not found_files:
-        print("\nNo files named 'merged.ini' found in the subfolders of the 'Mods' folder.")
+        welcome_message()
+        print("No files named 'merged.ini' found in the subfolders of the 'Mods' folder.")
         input("\nPress ENTER to close the program or just close the window")
 
 
@@ -68,27 +76,25 @@ def search_disabled_files(folder):
                 # Only print the first disabled file found
                 return
             
-# Welcome message and version
-def welcome_message(version):
-    print("\nWelcome to Genshin KeySwap Finder by ilCONDORA")
-    print(f"Version: {version}\n\n")
 
 # Check if the root_folder path is valid
 if not path.exists(root_folder) or not path.isdir(root_folder):
-    welcome_message(version)
-
+    welcome_message()
     print("Invalid root folder path. Please modify the root_folder variable.")
     input("\nPress ENTER to close the program or just close the window")
 else:
     # Get the initial timestamp of the folder
     last_timestamp = stat(root_folder).st_mtime
 
-    # First welcome message and version
-    welcome_message(version)
-
     while True:
         # Check the current timestamp of the folder
         current_timestamp = stat(root_folder).st_mtime
+
+        # Clear the command prompt
+        system('cls')
+
+        # Welcome message and version
+        welcome_message()
 
         sleep(2)
 
@@ -100,21 +106,10 @@ else:
             current_timestamp = stat(root_folder).st_mtime
             sleep(0.2)
 
-        # Clear the command prompt
-        system('cls')
-
-        # Welcome message, version and restart
-        welcome_message(version)
         print("Change detected in the folder. Restarting...")
-
-        sleep(2)
-
-        # Clear the command prompt
-        system('cls')
-
-        # Welcome message and version
-        welcome_message(version)
 
         # Update the last change timestamp
         last_timestamp = current_timestamp
+
+        sleep(2)
         
