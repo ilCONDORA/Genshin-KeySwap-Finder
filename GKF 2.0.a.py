@@ -4,7 +4,7 @@ from math import ceil
 
 # Specific folder and file name to find
 # Example of root_folder
-# root_folder = "C:\\Users\\ilCCONDORA\\Desktop\\mods Genshin\\3dmigoto\\Mods"
+# root_folder = "C:\\Users\\ilCONDORA\\Desktop\\mods Genshin\\3dmigoto\\Mods"
 file_name = "merged.ini"
 
 def search_file(root_folder, file_name):
