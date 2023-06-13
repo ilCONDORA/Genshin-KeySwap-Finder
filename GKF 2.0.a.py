@@ -7,9 +7,6 @@ from math import ceil
 # root_folder = "C:\\Users\\ilCCONDORA\\Desktop\\mods Genshin\\3dmigoto\\Mods"
 file_name = "merged.ini"
 
-# Get the last modified timestamp of the folder
-last_timestamp = stat(root_folder).st_mtime
-
 def search_file(root_folder, file_name):
     max_folder_length = 40  # Maximum length for the folder name
 
