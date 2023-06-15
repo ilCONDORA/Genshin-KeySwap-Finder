@@ -6,4 +6,4 @@
 
 ## Update Information
 
-Starting from Version 2.2, Genshin-KeySwap-Finder will be provided in separate folders, each containing both the .py and .exe files for your convenience.
+Starting from Version 2.3, Genshin-KeySwap-Finder will be provided in separate folders, each containing both the .py and .exe files for your convenience.
