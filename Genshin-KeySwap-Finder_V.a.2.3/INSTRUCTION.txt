@@ -1,0 +1,8 @@
+Hello guys, before running the program,
+you need to paste the path of the "Mods" folder of 3dmigoto into the "path GKF.txt" file. 
+
+
+!!! IMPORTANT !!! 
+Remember to use double backslashes (\\) in the path as shown in the example, otherwise it won't work. 
+
+The explanation is over, I hope you have fun, bye!
