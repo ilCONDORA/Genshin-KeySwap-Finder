@@ -1,4 +1,7 @@
 Hello guys, before running the program,
 you need to paste the path of the "Mods" folder of 3dmigoto into the "path GKF.txt" file. 
 
+!!! IMPORTANT !!!
+If you use the python file instead of the executable you must replace all "\" with "\\".
+
 The explanation is over, I hope you have fun, bye!
